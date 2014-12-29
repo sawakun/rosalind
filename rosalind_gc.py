@@ -20,10 +20,6 @@ for key, value in d.items():
                         count = count + 1
         gc[key] = float(count) / len(value) * 100.0
 
-for key, value in gc.items():
-        print key, value
-
-
 max_value = 0.0
 max_key = ''
 for key, value in gc.items():
