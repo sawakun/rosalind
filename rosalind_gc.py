@@ -1,5 +1,5 @@
-#fin = open('hoge.txt', 'r')
-fin = open('rosalind_gc.txt', 'r')
+fin = open('hoge.txt', 'r')
+#fin = open('rosalind_gc.txt', 'r')
 d = {}
 key = ''
 for line in fin:
