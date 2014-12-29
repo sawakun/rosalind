@@ -3,13 +3,14 @@ fin = open('rosalind_gc.txt', 'r')
 d = {}
 key = ''
 for line in fin:
+        if line[0] == '>':
+                key = line[1:].rstrip()
+                continue
         if key != '':
                 if d.has_key(key):
                         d[key] = d[key] + line.rstrip()
                 else:
                         d[key] = line.rstrip()
-        if line[0] == '>':
-                key = line[1:].rstrip()
 
 gc = {}
 for key, value in d.items():
